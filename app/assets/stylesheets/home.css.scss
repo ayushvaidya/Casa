@@ -1,0 +1,35 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.content-piece-1{
+	height:100%;	
+	width:150px;
+}
+
+.content-piece-2{
+	height:100%;
+	width:150px;		
+}
+
+.content-piece-3{
+	height:100%;
+	width:400px;
+	overflow: hidden;		
+}
+
+
+.status-box{
+	width:60px;
+	height:20px;
+	margin-top:16px;
+	background-color:#7ece65;
+	border-radius:20px;
+	text-align: center;
+	line-height:20px;
+	text-transform: uppercase;
+	color: white;
+	font-size: 11px;
+	font-weight: 600;
+}

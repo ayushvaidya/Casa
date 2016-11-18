@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CasaA</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+</head>
+<body>
+<div class="nav">
+	<%= link_to landing_path do %><div class="nav-brand">Casa</div><% end %>
+	<div class="profile-name float-right font-2 font-bold">Ayush Vaidya <i class="icon-arrow-down"></i></div>
+</div>
+<div class="left-menu font-2">
+	<%= link_to root_path do %>
+		<div class="left-menu-item"><i class="icon-home font-blue"></i>Properties</div>
+	<% end %>
+
+	<%= link_to messages_path do %>
+		<div class="left-menu-item"><i class="icon-envelope-open font-purple"></i>Messages</div>
+	<% end %>
+
+	<%= link_to tenant_requests_path do %>
+		<div class="left-menu-item"><i class="icon-flag font-orange"></i>Requests</div>
+	<% end %>
+
+	<%= link_to payments_path do %>
+		<div class="left-menu-item"><i class="icon-wallet font-green"></i>Payments</div>
+	<% end %>
+
+	<%= link_to documents_path do %>		
+		<div class="left-menu-item"><i class="icon-docs font-light-blue"></i>Documents</div>
+	<% end %>
+
+
+	<div class="left-menu-item"><i class="icon-settings"></i>Settings</div>
+	<div class="left-menu-divider-box">
+		<div class="left-menu-divider"></div>
+	</div>
+	<div class="left-menu-item-2">Support</div>
+	<div class="left-menu-item-2">FAQ</div>
+	<div class="left-menu-item-2">Home</div>
+</div>
+
+<div class="nav-padding">
+	<div class="container">
+		<%= yield %>
+	</div>
+</div>
+
+</body>
+</html>

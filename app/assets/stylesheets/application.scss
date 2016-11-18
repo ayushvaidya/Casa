@@ -1,0 +1,193 @@
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "simple-line-icons";
+
+
+.font-2{
+	color: #757575;
+}
+
+.light-bg{
+	background-color: #fafcfb !important;
+}
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+.font-bold{
+	font-weight:600;
+}
+
+
+
+.border-btn{
+	padding: 0px 24px;
+	border: 1px solid #d3d3d4;
+	border-radius: 4px;
+	height:32px;
+	line-height: 31px;
+	margin:0px 5px;
+	font-weight: 600;
+	color: #777;
+}
+
+
+
+
+
+
+
+
+
+a{
+	text-decoration: none;
+}
+
+a:visited{
+	color: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	overflow-y: scroll;
+
+}
+
+.nav{
+	height:60px;
+	position:fixed;
+	width: 100%;
+	background-color: white;
+	border-bottom: 1px solid #f1f3f5;
+	z-index: 3000;
+	padding: 0px 54px;
+}
+
+.nav-brand{
+	width:200px;
+	height:100%;
+	line-height: 60px;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+	float: left;
+}
+
+.profile-name{
+	height:60px;
+	line-height: 60px;
+	width:160px;
+	text-align: right;
+	i{
+		margin-left: 10px;
+		font-size: 11px;
+	}
+}
+
+.left-menu{
+	width:200px;
+	height:100%;
+	position: fixed;
+	left: 0px;
+	background-color: white;
+	border-right: 1px solid #f1f3f5;
+	padding-top: 80px;
+	font-weight: 600;
+}
+
+
+.left-menu-item{
+	height:50px;
+	width:100%;
+	line-height: 50px;
+	padding-left: 24px;
+	i{
+		margin-right: 16px;
+		font-size: 16px;
+	}
+}
+
+.left-menu-item:hover{
+	background-color: #fafcfb;
+}
+
+.left-menu-item-2{
+	height:40px;
+	width:100%;
+	line-height: 40px;
+	padding-left: 24px;
+	font-weight: 500;
+}
+
+
+.left-menu-divider-box{
+	width:100%;
+	padding: 24px;
+}
+
+.left-menu-divider{
+	width:100%;
+	border-bottom: 1px solid #f1f3f5;	
+}
+
+
+
+.container{
+	width: calc(100% - 200px);
+	height:100%;
+	margin-left: 200px;
+	padding-bottom: 60px;
+}
+
+
+.nav-padding{
+	padding-top: 60px;
+}
+
+.content-header{
+	width:100%;
+	height:90px;
+	padding: 30px;
+}
+
+
+.content-body{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #f1f3f5;
+	background-color: white;
+	padding-left: 30px;
+	line-height: 50px;
+	box-sizing: border-box;
+}
